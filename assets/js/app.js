@@ -5,12 +5,12 @@ const CODE_EXAMPLES = [...TOGGLES]; // Map codes
 // Create objects
 CODE_EXAMPLES.forEach((obExample, i) => {
     // Append Code examples 
-    appEl.appendChild(generateExamples(i));
+    appEl.appendChild(generateExamples(i, true));
 
 })
 
 
-function generateExamples(i) {
+function generateExamples(i , viewSource) {
     let codeExample = CODE_EXAMPLES[i];
 
     /** Create html **/
@@ -23,15 +23,29 @@ function generateExamples(i) {
     //  Append Card
     let cardEl = document.createElement('div');
     cardEl.setAttribute('class', 'card');
-    cardEl.setAttribute('data-id', codeExample.id);
-    cardEl.setAttribute('data-index', (i + 1));
     sectionEl.appendChild(cardEl);
+
+
+    // Append View Source Code Button
+    if(viewSource){
+        let viewCodeBtn = document.createElement('button');
+        viewCodeBtn.setAttribute('data-id', codeExample.id);
+        viewCodeBtn.setAttribute('data-index', (i + 1));
+        viewCodeBtn.innerText = 'View Code </>';
+        sectionEl.appendChild(viewCodeBtn);
+    }
+
 
     //  Create Shadow wrapper element
     let shadowRoot = cardEl.attachShadow({ mode: 'open' });
 
     // Create HTML Elements
-    shadowRoot.innerHTML = codeExample.html
+    if (viewSource){
+        shadowRoot.innerHTML = codeExample.html +  codeExample.html.replace('type="checkbox"', 'type="checkbox" checked');
+    }else{
+        shadowRoot.innerHTML = codeExample.html
+    }
+    
 
     //Create CSS 
     let exampleStyles = document.createElement('style');
@@ -45,7 +59,7 @@ function generateExamples(i) {
 
 
 
-document.querySelectorAll('#app .section').forEach(elm => {
+document.querySelectorAll('#app .section button').forEach(elm => {
     elm.addEventListener('click', (e) => {
         let index = parseInt(e.target.dataset.index);
         let showCase = document.querySelector('.showcase');

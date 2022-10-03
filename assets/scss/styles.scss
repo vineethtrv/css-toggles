@@ -66,12 +66,6 @@ body {
     font-size: 1.7rem;
     display: flex;
     align-items: center;
-
-    &:hover {
-        &::before {
-                animation: 1s brandAnim infinite;
-        }
-    }
 }
 
 .brand::before {
@@ -91,12 +85,10 @@ body {
 
 
 @keyframes brandAnim {
-
     0%,
     100% {
         background-position: -0.1rem center;
     }
-
     50% {
         background-position: 0.8rem center;
     }
@@ -119,14 +111,35 @@ body {
 .section {
     min-width: 200px;
     width: 33.33%;
-    height: 360px;
-    padding: 10px;
-    position: relative;
+    height: 300px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     @media (max-width: 1024px){
         width: 50%;
+    }
+
+    button {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        padding: 7px 10px;
+        border: none;
+        background: #424242;
+        font-weight: 800;
+        color: #fff;
+        white-space: nowrap;
+        cursor: pointer;
+        border-radius: 4px;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: 0.2s ease-in;
+        &:hover{
+            opacity: 1;
+            transform: translateX(-50%) scale(1.1);
+        }
     }
 }
 
@@ -136,12 +149,17 @@ body {
     background: var(--card-bg);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 60px 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
     transition: .2s linear;
-    cursor: pointer;
     &:hover {
         box-shadow: 0 3px 13px rgba(0, 0, 0, .2);
+
+        & + button {
+            opacity: 1;
+        }
     }
 }
 
