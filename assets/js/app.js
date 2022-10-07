@@ -41,9 +41,20 @@ function generateExamples(i , viewSource) {
 
     // Create HTML Elements
     if (viewSource){
-        shadowRoot.innerHTML = codeExample.html +  codeExample.html.replace('type="checkbox"', 'type="checkbox" checked');
+        shadowRoot.innerHTML  =  `<div class="toggle">
+            <input type="checkbox"/>
+            <label></label>
+        </div>
+        <div class="toggle">
+            <input checked type="checkbox"/>
+            <label></label>
+        </div>
+        `;
     }else{
-        shadowRoot.innerHTML = codeExample.html
+        shadowRoot.innerHTML = `<div class="toggle ss">
+            <input type="checkbox"/>
+            <label></label>
+        </div>`;
     }
     
 

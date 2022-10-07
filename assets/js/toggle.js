@@ -1,10 +1,6 @@
 export const TOGGLES = [
 {
     id: "model1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -63,10 +59,6 @@ export const TOGGLES = [
 
   {
     id: "model3",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -122,10 +114,6 @@ export const TOGGLES = [
 
   {
     id: "model3X1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -184,10 +172,6 @@ export const TOGGLES = [
 },
   {
     id: "model3X2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -227,10 +211,6 @@ export const TOGGLES = [
 },
   {
     id: "model3X3",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -289,10 +269,6 @@ export const TOGGLES = [
 },
   {
     id: "model2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -349,10 +325,6 @@ export const TOGGLES = [
 
   {
     id: "model4",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -408,10 +380,6 @@ export const TOGGLES = [
 
   {
     id: "model5",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -465,10 +433,6 @@ export const TOGGLES = [
 
   {
     id: "model6",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -526,10 +490,6 @@ export const TOGGLES = [
 
   {
     id: "model7",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -586,10 +546,6 @@ export const TOGGLES = [
 },
   {
     id: "modelCrl8",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -650,10 +606,6 @@ export const TOGGLES = [
 },
   {
     id: "model9",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -707,12 +659,8 @@ export const TOGGLES = [
 }
 `
 },
-  {
+{
     id: "modelxN1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 30px;
@@ -773,10 +721,6 @@ export const TOGGLES = [
   },
   {
     id: "modelxN2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 30px;
@@ -834,10 +778,6 @@ export const TOGGLES = [
   },
   {
     id: "modelxN3",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 30px;
@@ -897,11 +837,150 @@ export const TOGGLES = [
       `
 },
   {
+    id: "modelxN4",
+    css: `.toggle {
+  position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  appearance: none;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: '';
+  display: inline-block;
+  box-sizing:border-box;
+  transition: 0.2s ease-in;
+  box-sizing: border-box;
+  isolation: isolate;
+  position: relative;
+  height: 32px;
+  width: 64px;
+  border-radius: 15px;
+  background: #ecf0f3;
+  box-shadow:
+    -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6;
+}
+.toggle label:after {
+  content: 'o';
+  height: 32px;
+  width: 32px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: #ecf0f3;
+  font-family: arial;
+  color: #0001;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 800;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #f4f8ff inset;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  content: 'I';
+  font-size: 18px;
+  line-height: 32px;
+  transform: translate3d(32px, 0, 0);
+}`
+},
+
+  {
+    id: "modelxN5",
+    css: `.toggle {
+  position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  appearance: none;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: '';
+  display: inline-block;
+  box-sizing:border-box;
+  transition: 0.2s ease-in;
+  box-sizing: border-box;
+  isolation: isolate;
+  position: relative;
+  height: 32px;
+  width: 96px;
+  border-radius: 15px;
+  background: #ecf0f3;
+  box-shadow:
+    -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6;
+}
+.toggle label:after {
+  content: 'OFF';
+  height: 32px;
+  width: 48px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: #ecf0f3;
+  font-family: arial;
+  color: #0001;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 800;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #f4f8ff inset;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  content: 'ON';
+  color: #9ec189;
+  transform: translate3d(48px, 0, 0);
+}
+`
+},
+
+
+
+
+  {
     id: "modelx0",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -957,10 +1036,6 @@ export const TOGGLES = [
   },
   {
     id: "modelxlB1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -1017,10 +1092,6 @@ export const TOGGLES = [
   },
   {
     id: "model11",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -1076,10 +1147,6 @@ export const TOGGLES = [
   },
   {
     id: "model12",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
     position: relative;
     height: 32px;
@@ -1139,10 +1206,6 @@ export const TOGGLES = [
   
   {
     id: "modelX17",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -1205,10 +1268,6 @@ export const TOGGLES = [
   },
   {
     id: "modelLn12",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -1269,21 +1328,8 @@ export const TOGGLES = [
 `,
   },
   {
-    id: "modelLn13",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
-    css: `
-`,
-  },
-  {
     id: "modelX18",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
-    css: `.toggle {
+        css: `.toggle {
   position: relative;
   height: 32px;
   display: flex;
@@ -1345,10 +1391,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSql1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -1412,10 +1454,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSql2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -1477,10 +1515,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSql3",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -1544,10 +1578,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSql4",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -1610,10 +1640,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSql5",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -1682,10 +1708,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSql6",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -1750,13 +1772,139 @@ export const TOGGLES = [
 }
 `,
   },
-
+  {
+    id: "modelvdsdX3",
+    css: `.toggle {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: '';
+  background: #bbb;
+  height: 32px;
+  width: 68px;
+  position: relative;
+  display: inline-block;
+  box-sizing:border-box;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 76% 100%, 25% 100%, 0% 50%);
+  box-shadow: 0 0 10px #0001 inset, 8px 0 10px #0001 inset, -8px 0 10px #0001 inset;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  left: 8px;
+  z-index: 2;
+  transform: rotate(45deg);
+  box-sizing:border-box;
+  box-shadow: 0 0 5px #0002;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:hover + label:after  {
+    box-shadow: 0 2px 15px 0 #0002, 0 3px 8px 0 #0001;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #77C2BB;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  background-color: #009688;
+  left: 38px;
+}
+`,
+  },
+  {
+    id: "modelvdsX1",
+    css: `.toggle {
+  position: relative;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: '';
+  background: #bbb;
+  height: 40px;
+  width: 84px;
+  border-radius: 30px;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 0 0.1em 0.03em rgb(0 0 0 / 20%), inset 0 0.1em 0.3em rgb(0 0 0 / 30%), 0 0 2em rgb(255 255 255 / 60%);
+  box-sizing:border-box;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  transform: rotate(45deg);
+  z-index: 2;
+  box-sizing:border-box;
+  background: #5b5656;
+  border-left: 0.07em solid #756f6f;
+  border-bottom: 0.07em solid #756f6f;
+  box-shadow: 0 0.16em 0.01em #343131, 0 0.12em 0.3em rgb(52 49 49 / 60%), 0 0.12em 2em rgb(0 0 0 / 30%), 0.12em 0.15em 0.2em rgb(0 0 0 / 20%);
+  transition: .5s cubic-bezier(0.52, -0.41, 0.55, 1.46);
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #c0e7e3;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  background: #21bf73;
+  border-left: none;
+  border-right: 0.07em solid #37dc8d;
+  border-bottom: 0.07em solid #37dc8d;
+  box-shadow: 0 0.16em 0.01em #167e4c, 0 0.12em 0.3em rgb(22 126 76 / 60%), 0 0.12em 2em rgb(0 0 0 / 30%), -0.12em 0.15em 0.2em rgb(0 0 0 / 20%);
+  transform: translatex(44px) rotate(45deg);
+}
+`,
+  },
   {
     id: "modelBX1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -1811,10 +1959,6 @@ export const TOGGLES = [
   },
   {
     id: "modelBX2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -1874,10 +2018,6 @@ export const TOGGLES = [
   },
   {
     id: "modelBX3",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -1937,10 +2077,6 @@ export const TOGGLES = [
   },
   {
     id: "modelBX4",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -2004,10 +2140,6 @@ export const TOGGLES = [
   },
   {
     id: "modelBX5",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -2059,10 +2191,6 @@ export const TOGGLES = [
   },
   {
     id: "modelBX6",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -2115,10 +2243,6 @@ export const TOGGLES = [
   },
   {
     id: "modelBX7",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 40px;
@@ -2162,13 +2286,10 @@ export const TOGGLES = [
   position: absolute;
   top: 0px;
   left: 1px;
-  display: block;
   width: 55px;
   height: 30px;
   border: 5px solid #ededec;
   border-radius: 50px;
-  content: "";
-  background: #fff;
   box-shadow: 0 2px 5px #333;
   background: #d5d4cd;
   background: linear-gradient(#d5d4cd 0%, #f8f8f7 100%);
@@ -2190,10 +2311,6 @@ export const TOGGLES = [
 
   {
     id: "model8",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -2247,11 +2364,7 @@ export const TOGGLES = [
 `,
   },
   {
-    id: "model9",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
+    id: "modelxad9",
     css: `.toggle {
   position: relative;
 }
@@ -2304,12 +2417,130 @@ export const TOGGLES = [
 }
 `,
   },
+
+  {
+    id: "modelDaVA1",
+    css: `.toggle {
+  position: relative;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 42px;
+  align-items: center;
+}
+.toggle label:before {
+  content: '';
+  border-radius: 20px;
+  width: 84px;
+  height: 32px;
+  background: #ccc;
+  position: relative;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  border-radius: 10px;
+  width: 42px;
+  height: 42px;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  
+  transform: rotate(45deg);
+  background: #fff;
+  box-shadow: 0 0 0 2px #0002;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:hover + label:after  {
+    box-shadow: 0 2px 15px 0 #0002, 0 3px 8px 0 #0001;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #77C2BB;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  left: 42px;
+}
+`
+  },
+  {
+    id: "modelCrEmbVA3",
+    css: `.toggle {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: '';
+  display: inline-block;
+  width: 72px;
+  height: 36px;
+  border: 1px solid #ccc;
+  box-sizing:border-box;
+  border-radius: 50px;
+  transition: 0.2s ease-in;
+  background: #f08270;
+  box-shadow: inset 0 0 8px #0002;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  box-sizing:border-box;
+  width: 36px;
+  height: 36px;
+  border: 6px solid #ededec;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 2px 5px #333;
+  background: #d5d4cd;
+  background: linear-gradient(#d5d4cd 0%, #FFF 100%);
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  box-shadow:inset 0 0 8px #0002,
+    inset 120px 0 #49dccf;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  transform: translatex(36px);
+}
+`
+  },
+
   {
     id: "modelSh10",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -2389,10 +2620,6 @@ export const TOGGLES = [
 
   {
     id: "modelSh11",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -2470,10 +2697,6 @@ export const TOGGLES = [
   },
   {
     id: "modelOI1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -2532,10 +2755,6 @@ export const TOGGLES = [
   },
   {
     id: "modelOI2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -2594,10 +2813,6 @@ export const TOGGLES = [
   },
   {
     id: "modelOI3",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -2658,10 +2873,6 @@ export const TOGGLES = [
   },
   {
     id: "modelOI4",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -2720,10 +2931,6 @@ export const TOGGLES = [
   },
   {
     id: "modelOI6",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -2782,10 +2989,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSHl7",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -2843,10 +3046,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSHlAn1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -2903,10 +3102,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSHl7",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -2971,10 +3166,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSHl8",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -3045,10 +3236,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSHl9",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -3118,10 +3305,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSHl11",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -3216,10 +3399,6 @@ export const TOGGLES = [
   },
   {
     id: "modelSHl12",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 42px;
@@ -3316,10 +3495,6 @@ export const TOGGLES = [
   },
   {
     id: "modelTX1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -3381,10 +3556,6 @@ export const TOGGLES = [
   },
   {
     id: "modelTX2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 32px;
@@ -3452,10 +3623,6 @@ export const TOGGLES = [
   },
   {
     id: "modelTX3",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 36px;
@@ -3523,10 +3690,6 @@ export const TOGGLES = [
   },
   {
     id: "modelTxtS4",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 36px;
@@ -3607,11 +3770,332 @@ export const TOGGLES = [
 }`
   },
   {
+    id: "modelTxTra1",
+    css: `.toggle {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+  perspective: 64px;
+}
+
+.toggle label:before {
+  content: 'Yes No';
+  background: #ffa3a3;
+  color: #ef3434;
+  height: 32px;
+  width: 64px;
+  word-spacing: 12px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family:arial;
+  line-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 4px;
+  box-sizing:border-box;
+  transition: 0.3s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 29px;
+  height: 26px;
+  background: #ef3434;
+  transform-origin: 100% 50% 0;
+  transition: 0.3s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #c0e7e3;
+  color: #21bf73;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  transform: rotateY(180deg);
+  background: #21bf73;
+}
+    `
+  },
+  {
+    id: "modelTxTra2",
+    css: `.toggle {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: 'Yes No';
+  background: #ffa3a3;
+  color: #ef3434;
+  height: 32px;
+  width: 64px;
+  word-spacing: 12px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family:arial;
+  line-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 4px;
+  box-sizing:border-box;
+  transition: 0.3s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 29px;
+  height: 26px;
+  background: #ef3434;
+  transform-origin: 100% 50% 0;
+  transition: 0.3s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #c0e7e3;
+  color: #21bf73;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  transform: translatex(28px);
+  background: #21bf73;
+}
+    `
+  },
+  {
+    id: "modelTxTra3",
+    css: `.toggle {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: 'Yes No';
+  background: #ffa3a3;
+  color: #ef3434;
+  height: 32px;
+  width: 64px;
+  word-spacing: 12px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family:arial;
+  line-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 4px;
+  box-sizing:border-box;
+  transition: 0.3s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 29px;
+  height: 26px;
+  background: #ef3434;
+  transform-origin: 100% 50% 0;
+  transition: 0.3s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #c0e7e3;
+  color: #21bf73;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  transform: rotate(180deg);
+  background: #21bf73;
+}
+
+    `
+  },
+  {
+    id: "modelTxTra4",
+    css: `.toggle {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+
+.toggle label:before {
+  content: 'Yes No';
+  background: #ffa3a3;
+  color: #ef3434;
+  height: 32px;
+  width: 64px;
+  word-spacing: 12px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family:arial;
+  line-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 4px;
+  box-sizing:border-box;
+  transition: 0.3s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 14px;
+  width: 29px;
+  height: 4px;
+  background: #ef3434;
+  transform-origin: 100% 50% 0;
+  transition: 0.3s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #c0e7e3;
+  color: #21bf73;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  transform: translatex(28px);
+  background: #21bf73;
+}
+    `
+  },
+  {
+    id: "modelTxTra5",
+    css: `.toggle {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: '';
+  background: #ffa3a3;
+  height: 32px;
+  width: 64px;
+  display: inline-flex;
+  box-sizing:border-box;
+  transition: 0.3s ease-in;
+}
+.toggle label:after {
+  content: 'Yes No';
+  word-spacing: 12px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family:arial;
+  line-height: 26px;
+  text-indent: -30px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 29px;
+  height: 26px;
+  background: #ef3434;
+  transform-origin: 100% 50% 0;
+  transition: 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #c0e7e3;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  text-indent: 4px;
+  transform: translatex(29px);
+  background: #21bf73;
+}
+`
+  },
+  {
     id: "modelTX4",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 42px;
@@ -3677,10 +4161,6 @@ export const TOGGLES = [
   },
   {
     id: "modelTX5",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 42px;
@@ -3744,10 +4224,6 @@ export const TOGGLES = [
   },
   {
     id: "modelTX6",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 36px;
@@ -3812,10 +4288,6 @@ export const TOGGLES = [
   },
   {
     id: "modelTX7",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   height: 42px;
@@ -3882,10 +4354,6 @@ export const TOGGLES = [
 
   {
     id: "modelSh6",
-    html: `<div class="toggle ss">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -3957,10 +4425,6 @@ export const TOGGLES = [
   },
   {
     id: "modelx12",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
     position: relative;
     background: #2B2B2D;
@@ -4039,10 +4503,6 @@ export const TOGGLES = [
   },
   {
     id: "model13",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   display: inline-block;
@@ -4114,10 +4574,6 @@ export const TOGGLES = [
   }, 
   {
     id: "model14",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
 }
@@ -4184,12 +4640,524 @@ export const TOGGLES = [
 }
 `,
   },
+
   {
-    id: "model15",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
+    id: "modelVrtc01",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: '';
+  width: 32px;
+  height: 64px;
+  background: #ccc;
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px #0004;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 1px;
+  top: 2px;
+  z-index: 2;
+  background: #fff;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #4BD865;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  top: 32px;
+}
+      `,
+  },
+  {
+    id: "modelVrtc02",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: '';
+  width: 18px;
+  height: 64px;
+  background: #ccc;
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow:inset 0 0 4px #0004, inset 0 0 #4BD865;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  left: -6px;
+  top: 0px;
+  z-index: 2;
+  box-shadow: 0 1px 10px #0005;
+  background: #fff;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  box-shadow: inset 0 0 4px #0004, inset 0 32px #4BD865;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  top: 32px;
+  box-shadow: 0 -1px 10px #0005;
+}
+      `,
+  },
+  {
+    id: "modelVrtc03",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: '';
+  width: 32px;
+  height: 60px;
+  background: linear-gradient(#DDD, #DDD) no-repeat center;
+  background-size: 2px 64px;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  left: 0;
+  top: 0px;
+  z-index: 2;
+  background: #BBB;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+   background-image: linear-gradient(#77C2BB, #77C2BB)
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  top: 28px;
+  background: #009688;
+}`,
+  },
+  {
+    id: "modelVrtc04",
+    css: `.toggle {
+  position: relative;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.toggle label:before {
+  content: '';
+  width: 32px;
+  height: 64px;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid #333;
+  background: #fff;
+  display: inline-block;
+  transition: 0.25s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  border-radius: 4px;
+  background: #333;
+  width: 28px;
+  height: 28px;
+  left: 4px;
+  top: 4px;
+  z-index: 2;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #333;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  background: #FFF;
+  transform: translateY(32px);
+}`,
+  },
+  {
+    id: "modelVrtc05",
+    css: `.toggle {
+  position: relative;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 72px;
+  border: 1px solid #ccc;
+  box-sizing:border-box;
+  border-radius: 50px;
+  transition: 0.2s ease-in;
+  background: #f08270;
+  box-shadow: inset 0 0 8px #0002;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing:border-box;
+  width: 36px;
+  height: 36px;
+  border: 6px solid #ededec;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 2px 5px #333;
+  background: #d5d4cd;
+  background: linear-gradient(#d5d4cd 0%, #FFF 100%);
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  box-shadow:inset 0 0 8px #0002,
+    inset  0 36px #49dccf;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  transform: translateY(36px);
+}`,
+  },
+  {
+    id: "modelVrtc06",
+    css: `.toggle {
+  position: relative;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing:border-box;
+}
+.toggle label:before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 72px;
+  border: 1px solid #BBB;
+  box-sizing:border-box;
+  border-radius: 50px;
+  transition: 0.2s ease-in;
+  background: #f08270;
+  box-shadow: inset 0 0 8px #0005,  0 0 0 4px #EEE, inset  0 0 #49dccf;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing:border-box;
+  width: 24px;
+  height: 36px;
+  border: 6px solid #ededec;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 2px 5px #333;
+  background: #d5d4cd;
+  background: linear-gradient(#d5d4cd 0%, #FFF 100%);
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  box-shadow: inset 0 0 8px #0005,  0 0 0 4px #EEE, inset  0 36px #49dccf;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  transform: translateY(36px);
+}`,
+  },
+  {
+    id: "modelVrtc07",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  width: 36px;
+  height: 72px;
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s ease-in;
+  box-sizing: border-box;
+  background-color: #333;
+  box-shadow: 0 0 0 2px #EEE , 0 0 10px #0003;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #FFF;
+  border-radius: 20px;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  transform: translate(3px, 3px) rotate(0deg);
+  transition: 0.3s ease-in;
+  transform-origin: 33px 33px;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  transform: translate(3px, 3px) rotate(-90deg);
+  background: #333;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  transform:  rotate(180deg);
+  background: #fff;
+}`,
+  },
+  {
+    id: "modelVrtc08",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: '';
+  width: 28px;
+  height: 60px;
+  background: linear-gradient(#BBB, #BBB) no-repeat center;
+  background-size: 2px 64px;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 6px solid #BBB;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: #FFF;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+   background-image: linear-gradient(#77C2BB, #77C2BB)
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  top: 32px;
+  border-color: #009688;
+}`,
+  },
+  {
+    id: "modelVrtc09",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: block;
+  color: #009688;
+  box-sizing: border-box;
+}
+.toggle label:first-line  {
+  color: #CCC;
+}
+.toggle label:before {
+    content: "FF N";
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 800;
+    width: 50px;
+    height: 60px;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 28px;
+    padding-top: 3px;
+    margin-right: 10px;
+    line-height: 28px;
+    background-image: radial-gradient(circle 13px, #EEE 100%, transparent 0), 
+      radial-gradient(circle 13px, #EEE 100%, transparent 0), 
+      linear-gradient(#EEE, #EEE);
+    background-repeat: no-repeat;
+    background-size: auto auto, auto auto, 26px 28px;
+    background-position: -12px -15px, -12px 15px, 0px 15px;
+    transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 4px solid #BBB;
+  border-radius: 50%;
+  left: 2px;
+  top: 5px;
+  z-index: 2;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  top: 33px;
+  border-color: #009688;
+}
+      `,
+  },
+
+
+
+
+
+  {
+    id: "modelcs15",
     css: `.toggle {
   display: inline-block;
   position: relative;
@@ -4270,10 +5238,6 @@ export const TOGGLES = [
 
   {
     id: "modelShX1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4339,10 +5303,6 @@ export const TOGGLES = [
 
   {
     id: "modelShXLa2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4407,10 +5367,6 @@ export const TOGGLES = [
 },
   {
     id: "modelShX2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4469,10 +5425,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEM10",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4527,10 +5479,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEM12",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4584,10 +5532,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEMLs1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4646,10 +5590,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEM13",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4700,13 +5640,636 @@ export const TOGGLES = [
 }
 `,
 },
+  {
+    id: "modelChkBx1",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background: #CCC;
+  margin-right: 5px;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  z-index: 2;
+  width: 8px;
+  height: 16px;
+  border-bottom: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background-color: #009688;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+`,
+},
+  {
+    id: "modelChkBx2",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px solid #1565C0;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  z-index: 2;
+  width: 8px;
+  height: 16px;
+  border-bottom: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.2s 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background-color: #1565C0;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+`,
+},
+  {
+    id: "modelChkBx3",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  background: #fff;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: -2px;
+  z-index: 2;
+  width: 10px;
+  height: 22px;
+  border-bottom: 3px solid #3330;
+  border-right: 3px solid #3330;
+  box-shadow: 0 0 #fff0;
+  background: #fff0;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  transition: background 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  border-color: #333;
+  box-shadow: 6px 0 #fff;
+  background: #fff;
+  transition: border 0.3s ease-in;
+}
+`,
+},
+  {
+    id: "modelChkBx4",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  background: #38b2ac;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  z-index: 2;
+  width: 16px;
+  height: 0px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: translateY(0px) rotate(0deg);
+  box-sizing: border-box;
+  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  height: 8px;
+  transform: translateY(-5px) rotate(-45deg);
+}
+`,
+},
+  {
+    id: "modelChkBx5",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  background: #ecf0f3;
+  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 32px;
+  height: 32px;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 14px;
+  z-index: 2;
+  width: 16px;
+  height: 8px;
+  transform: translateY(-5px) rotate(-45deg);
+  border-bottom: 2px solid #0003;
+  border-left: 2px solid #0003;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #ecf0f3;
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #f4f8ff inset;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  border-color: #6d5dfc;
+}
+`,
+},
+  {
+    id: "modelChkBx6",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  background: #ecf0f3;
+  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: #0001;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #ecf0f3;
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #f4f8ff inset;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  background: #6d5dfc;
+}
+`,
+},
+  {
+    id: "modelChkBx7",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  background: #ecf0f3;
+  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0001;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #ecf0f3;
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #f4f8ff inset;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  background: #6d5dfc;
+}
+`,
+},
+  {
+    id: "modelChkBx8",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  background: #ecf0f3;
+  box-shadow: 0 0 0 0 #FFF inset;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid  #d1d9e6;
+  width: 32px;
+  height: 32px;
+  transition: 0.3s cubic-bezier(1, 0.19, 0, 1.84);
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #673AB7;
+  border-color: #673AB7;
+  box-shadow:0 0 0 6px #FFF inset;
+} 
+`,
+},
+  {
+    id: "modelChkBx9",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  background: #7986CB;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  z-index: 2;
+  width: 16px;
+  height: 0px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: translateY(0px) rotate(0deg);
+  box-sizing: border-box;
+  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #3D5AFE;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  height: 8px;
+  transform: translateY(-5px) rotate(-45deg);
+}
+`,
+},
+  {
+    id: "modelChkBx10",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  box-shadow: 0 0 0 2px #00897B , inset 0 0 0 2px #00897B;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  z-index: 2;
+  width: 16px;
+  height: 0px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: translateY(0px) rotate(0deg);
+  box-sizing: border-box;
+  transition: 0.2s 0.1s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  box-shadow: 0 0 0 2px #00897B , inset 0 0 0 15px #00897B;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  height: 8px;
+  transform: translateY(-5px) rotate(-45deg);
+}
+`,
+},
+  {
+    id: "modelChkBx11",
+    css: `.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  border: 2px solid #00897B;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  z-index: 2;
+  width: 16px;
+  height: 0px;
+  border-bottom: 2px solid #0000;
+  border-left: 2px solid #0000;
+  transform: translateY(0px) rotate(0deg);
+  box-sizing: border-box;
+  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  background: #00897B;
+  animation: 0.3s splash ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  height: 8px;
+  border-color: #FFF;
+  transform: translateY(-5px) rotate(-45deg);
+}
+@keyframes splash{
+  0% {box-shadow:  0 0 0 0 rgba(0, 137, 123, 1)}
+  50% {box-shadow: 0 0 0 10px rgba(0, 137, 123, 0.5)}
+  100% {box-shadow: 0 0 0 20px rgba(0, 137, 123, 0)}
+}
+
+`,
+},
 
   {
     id: "modelShpX1",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4746,10 +6309,6 @@ export const TOGGLES = [
 },
   {
     id: "modelShpHrt2",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4789,10 +6348,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEM14",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4827,10 +6382,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEM15",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4866,10 +6417,6 @@ export const TOGGLES = [
   
   {
     id: "modelEM18",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4903,10 +6450,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEM19",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4940,10 +6483,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEM20",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -4985,10 +6524,6 @@ export const TOGGLES = [
 },
   {
     id: "modelEM21",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
@@ -5031,10 +6566,6 @@ export const TOGGLES = [
  
   {
     id: "modelEM22",
-    html: `<div class="toggle">
-    <input type="checkbox"/>
-    <label></label>
-</div>`,
     css: `.toggle {
   position: relative;
   box-sizing: border-box;
