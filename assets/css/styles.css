@@ -55,6 +55,42 @@ body {
   box-shadow: 0 3px 10px #0001;
 }
 
+.app-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header nav .nav-btn {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 110% auto;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #fff;
+  filter: invert(1);
+  transition: 0.3s linear;
+}
+
+.app-header nav .nav-btn:hover {
+  filter: invert(0);
+}
+
+.app-header nav .nav-btn + .nav-btn {
+  margin-left: 10px;
+}
+
+.app-header nav .nav-btn.codepen {
+  background-image: url(../images/codepen.png);
+}
+
+.app-header nav .nav-btn.git {
+  background-image: url(../images/git.png);
+}
+
 .brand {
   font-family: 'Roboto', sans-serif;
   margin: 0;
