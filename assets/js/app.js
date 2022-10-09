@@ -51,7 +51,7 @@ function generateExamples(i , viewSource) {
         </div>
         `;
     }else{
-        shadowRoot.innerHTML = `<div class="toggle ss">
+        shadowRoot.innerHTML = `<div class="toggle">
             <input type="checkbox"/>
             <label></label>
         </div>`;
@@ -82,7 +82,10 @@ document.querySelectorAll('#app .section button').forEach(elm => {
         showCase.dataset.index = index;
 
         // load code
-        document.querySelector('#markup').textContent = CODE_EXAMPLES[index - 1].html;
+        document.querySelector('#markup').textContent = `<div class="toggle">
+    <input type="checkbox"/>
+    <label></label>
+</div>`;
         document.querySelector('#css').textContent = CODE_EXAMPLES[index - 1].css;
 
         // popup
