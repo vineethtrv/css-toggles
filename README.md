@@ -1,6 +1,6 @@
-# CSS Toggles & Switches
+# CSS Toggles Switches
 
-CSS Toggle is a collection of different types of toggles, switches and their source code. 
+This is a collection of different types of CSS toggle switches and their source code. 
 There are no javascript dependencies in this. It's is done using pure CSS. Hence it is easily customization too.
 
 [Open Css Toggles](https://csstoggles.github.io/)  
